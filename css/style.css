@@ -1,0 +1,439 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* FUENTES */
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fuentes/Poppins/OFL.txt);
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(../fuentes/Satoshi_Complete/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf);
+}
+
+/* VARIABLES */
+:root {
+    --fuente-parrafos: 'Poppins', sans-serif;
+    --fuente-titulos: 'Satoshi', sans-serif;
+    --azul-950: #070119;
+    --azul-900: #130246;
+    --azul-800: #200373;
+    --azul-700: #2c03a1;
+    --azul-600: #3802d0;
+    --azul-500: #40f;
+    --azul-400: #652eff;
+    --azul-300: #855cff;
+    --azul-200: #a78aff;
+    --azul-100: #c9b8ff;
+    --azul-50: #ece6ff;
+    --negro-900: #0C0B0B;
+}
+
+/* ======== DESPLAZAMIENTO ======== */
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px 0;
+}
+
+/* Ocultar scroll en webkit */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.h2 {
+    font-family: var(--fuente-titulos);
+    font-size: 60px;
+}
+
+.h3 {
+    font-family: var(--fuente-titulos);
+}
+
+/* EXPERIENCIA */
+.experiencia {
+    width: 100%;
+    background: var(--negro-900);
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiencia2 {
+    width: 100%;
+    background: var(--azul-800);
+    padding-bottom: 50px;
+}
+
+.experienciasContenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.experienciaIndividual {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 681px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.textosExperiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px 60px 30px 30px;
+    background-color: var(--azul-900);
+    width: 521px;
+    height: auto;
+}
+
+.h2Experiencia {
+    color: var(--azul-500);
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.h3Experiencia {
+    font-size: 30px;
+    color: var(--azul-50);
+}
+
+.pExperienciaDescripcion {
+    color: #FFFFFF;
+    font-family: var(--fuente-parrafos);
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.fechaExperiencia {
+    width: 199px;
+    height: 98px;
+    flex-shrink: 0;
+    position: absolute;
+    right: -5px;
+    top: 30%;
+}
+
+.pFechaExperiencia {
+    color: rgba(174, 171, 255, 0.40);
+    font-family: var(--fuente-titulos);
+    font-size: 64px;
+}
+
+
+
+/* ===== EDUCACIÓN ===== */
+.educacionSection {
+    background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
+    padding: 60px 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.h2Eduacion {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: var(--azul-600);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: var(--azul-50);
+}
+
+.timeline-item {
+    position: relative;
+    max-width: 800px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item.left {
+    left: -320PX;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-item .year {
+    color: rgba(174, 171, 255, 0.40);
+    text-align: right;
+    font-family: var(--fuente-titulos);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.timeline-item .content {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 750px;
+}
+
+.lugarEducacion {
+    color: var(--negro-900);
+    font-family: var(--fuente-parrafos);
+    font-size: 16px;
+}
+
+.h3Educacion {
+    color: var(--azul-50);
+    font-size: 30px;
+}
+
+.timeline-item h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: var(--azul-50);
+    font-family: var(--fuente-parrafos);
+}
+
+.timeline-item p {
+    color: #FFF;
+
+    font-family: Poppins;
+    font-size: var(--20, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.timeline-item.right::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: var(--azul-800);
+    border: 4px solid var(--azul-50);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-item.left::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: var(--azul-800);
+    border: 4px solid var(--azul-50);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.desaparecerEscritorio {
+    display: none;
+}
+
+/* 📱 Responsive desde tablets */
+@media screen and (max-width: 1024px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 15px;
+        margin-bottom: 40px;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+        text-align: left;
+    }
+
+    .timeline-item .content {
+        max-width: 90%;
+        margin-left: 30px;
+    }
+
+    .timeline-item .year {
+        margin-left: 30px;
+    }
+
+    .desaparecerTablet {
+        display: none;
+    }
+
+    .desaparecerEscritorio {
+        display: flex;
+    }
+}
+
+
+
+
+
+.habilidades{
+    background: url(../img/pexels-pixabay-248515.jpg);
+}
+
+
+
+.porcentaje {
+    background-color: rgba(162, 89, 255, 0.6);
+    position: absolute;
+    bottom: -40px;
+    left: 70px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+
+
+:root {
+    --glow-color: #3b82f6;
+    /* color por defecto */
+    --glow-size: 150px;
+}
+
+.glowing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.glowing-card {
+    position: relative;
+    display: flex;
+    width: 453px;
+    height: 437px;
+    padding: 40px 15px 50px 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    transition: transform 0.3s ease;
+    z-index: 0;
+    border-radius: 20px;
+    background: rgba(36, 36, 36, 0.059); /* color semi-transparente */
+    backdrop-filter: blur(10px); /* desenfoque del fondo */
+    -webkit-backdrop-filter: blur(10px); /* soporte Safari */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* sombra ligera */
+    color: white; /* texto visible sobre vidrio */
+}
+
+/* ::before = capa brillante en el borde */
+.glowing-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 5px;
+    background: radial-gradient(var(--glow-size) circle at var(--x, 50%) var(--y, 50%),
+            var(--glow-color),
+            transparent 70%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.glowing-card:hover::before {
+    opacity: 1;
+}
+.imgPorcentaje {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.porcentajeNumero {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: var(--fuente-titulos);
+}
+.imgLogoH{
+    width: 120px;
+    height: 120px;
+}
+.h3Habilidades{
+    color: var(--azul-50);
+    font-size: 40px;
+    text-align: center;
+}
+.phabilidades{
+    font-family: var(--fuente-parrafos);
+    font-size: 18px;
+    text-align: center;
+}
