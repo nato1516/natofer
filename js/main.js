@@ -9,9 +9,9 @@ document.querySelectorAll('.glowing-card').forEach(card => {
 });
 // Función para convertir hex a rgba con opacidad
 function hexToRgba(hex, alpha = 0.5) {
-    const r = parseInt(hex.slice(1,3), 16);
-    const g = parseInt(hex.slice(3,5), 16);
-    const b = parseInt(hex.slice(5,7), 16);
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
     return `rgba(${r},${g},${b},${alpha})`;
 }
 
@@ -35,5 +35,76 @@ document.querySelectorAll('.imgPorcentaje').forEach(container => {
     }, 30); // ajusta velocidad
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".timeline-item");
 
+    // IntersectionObserver para animación de aparición
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
 
+    items.forEach(item => observer.observe(item));
+
+    // Parallax lateral solo en .content
+    window.addEventListener("scroll", () => {
+        items.forEach(item => {
+            const content = item.querySelector(".content");
+            const rect = item.getBoundingClientRect();
+            const speed = 0.05; // velocidad parallax lateral
+
+            if (item.classList.contains("left")) {
+                content.style.transform = `translateX(${-(window.innerHeight - rect.top) * speed}px)`;
+            } else {
+                content.style.transform = `translateX(${(window.innerHeight - rect.top) * speed}px)`;
+            }
+        });
+    });
+});
+
+const words = [
+    "creatividad sin límites",
+    "tecnología inteligente",
+    "diseño funcional",
+    "soluciones web",
+    "experiencias únicas",
+    "diseño atractivo"
+];
+
+let index = 0;
+let charIndex = 0;
+let isDeleting = false;
+const el = document.getElementById("typewriter");
+
+function type() {
+    const currentWord = words[index];
+
+    if (isDeleting) {
+        charIndex--;
+    } else {
+        charIndex++;
+    }
+
+    el.textContent = currentWord.substring(0, charIndex);
+
+    if (!isDeleting && charIndex === currentWord.length) {
+        setTimeout(() => {
+            isDeleting = true;
+            type();
+        }, 1500); // pausa antes de borrar
+        return;
+    }
+
+    if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        index = (index + 1) % words.length;
+    }
+
+    setTimeout(type, isDeleting ? 100 : 280);
+}
+
+type();
