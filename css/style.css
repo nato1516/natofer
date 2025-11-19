@@ -21,17 +21,18 @@
 :root {
     --fuente-parrafos: 'Poppins', sans-serif;
     --fuente-titulos: 'Satoshi', sans-serif;
-    --azul-950: #070119;
-    --azul-900: #130246;
-    --azul-800: #200373;
-    --azul-700: #2c03a1;
-    --azul-600: #3802d0;
-    --azul-500: #40f;
-    --azul-400: #652eff;
-    --azul-300: #855cff;
-    --azul-200: #a78aff;
-    --azul-100: #c9b8ff;
-    --azul-50: #ece6ff;
+    --azul-950: #06231a;
+    --azul-900: #0b3a29;
+    --azul-800: #0f5339;
+    --azul-700: #146d49;
+    --azul-600: #1b8a63;
+    --azul-500: #34e0a1;
+    /* color base */
+    --azul-400: #63e7b7;
+    --azul-300: #8fefcb;
+    --azul-200: #b8f6de;
+    --azul-100: #ddfcf0;
+    --azul-50: #f3fefa;
     --negro-900: #0C0B0B;
 }
 
@@ -371,6 +372,7 @@ section {
     font-size: 60px;
     margin-bottom: 40px;
     color: var(--azul-600);
+    padding-top: 100px;
 }
 
 .timeline {
@@ -694,10 +696,175 @@ section {
     color: var(--azul-50);
     font-size: 40px;
     padding: 40px 0;
+    text-align: center;
 }
 
 .h2habilidades {
     text-align: center;
     color: var(--azul-600);
     font-size: 50px;
+    padding-top: 100px;
+}
+
+
+
+/* ============================
+   SECCIÓN PROJECTS
+============================ */
+.proyectos{
+    background-color: var(--negro-900);
+}
+/* TÍTULO FIJO */
+.stack-contenedor {
+    position: relative;
+    height: 500vh;
+    /* espacio para scroll */
+    width: 100%;
+    padding-top: 100px;
+    gap: 20px;
+}
+
+.card {
+    position: sticky;
+    top: 80px;
+    /* todas se fijan en la misma zona */
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(50px);
+    height: 550px;
+}
+
+/* desplazamiento escalonado para que se vean los títulos 
+.card:nth-child(1) { top: 80px; }*/
+.card:nth-child(2) {
+    top: 150px;
+}
+
+.card:nth-child(3) {
+    top: 220px;
+}
+
+.card:nth-child(4) {
+    top: 290px;
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 1.8rem;
+    color: #333;
+    background: #f4f4f4;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.modales {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.modales.activo {
+    display: flex;
+}
+
+.cerrar {
+    background-color: #34e0a1;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    background-color: #0f5339;
+}
+
+.cerrar:hover .iconoXModal {
+    color: #fff;
+}
+
+.iconoXModal {
+    color: #000;
+
+}
+.stack-contenedor {
+    position: relative;
+    height: 500vh;
+    /* espacio para scroll */
+    width: 100%;
+}
+
+.card {
+    position: sticky;
+    top: 80px;
+    /* todas se fijan en la misma zona */
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(50px);
+    height: 550px;
+}
+
+/* desplazamiento escalonado para que se vean los títulos 
+.card:nth-child(1) { top: 80px; }*/
+.card:nth-child(2) {
+    top: 150px;
+}
+
+.card:nth-child(3) {
+    top: 220px;
+}
+
+.card:nth-child(4) {
+    top: 290px;
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 1.8rem;
+    color: #333;
+    background: #f4f4f4;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.headerCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Proyectos {
+    background-color: black;
+    padding: 0px 0px 160px;
+}
+
+.tituloProyectos h2 {
+    color: green;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contacto {
+    padding: 100px 0px 60px;
+    background-color: aquamarine;
 }

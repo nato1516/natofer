@@ -17,11 +17,11 @@
                         <defs>
                             <style>
                                 .cls-1 {
-                                    fill: #fff;
+                                    fill: #34e0a1;
                                 }
 
                                 .cls-2 {
-                                    fill: blue;
+                                    fill: #000;
                                 }
                             </style>
                         </defs>
@@ -222,7 +222,7 @@
                     <div class="glowing-card" style="--glow-color:#DF871E;">
                         <div class="imgPorcentaje" data-porcentaje="40" data-color="#DF871E">
                             <div class="porcentaje">
-                                <p class="porcentajeNumero">0%</p>
+                                <p class="porcentajeNumero">40%</p>
                             </div>
                             <img class="imgLogoH" src="img/habilidades/Ilustrador.png" alt="logo de figma">
                         </div>
@@ -279,11 +279,134 @@
                             optimizan la comunicación entre diseño y desarrollo.</p>
                     </div>
                 </div>
+                <h3 class="h3 h3SubHabilidades">Backend</h3>
+                <div class="glowing-cards">
+                    <div class="glowing-card" style="--glow-color:#E48E00;">
+                        <div class="imgPorcentaje" data-porcentaje="40" data-color="#E48E00">
+                            <div class="porcentaje">
+                                <p class="porcentajeNumero">40%</p>
+                            </div>
+                            <img class="imgLogoH" src="img/habilidades/mysql.png" alt="logo de figma">
+                        </div>
+                        <h3 class="h3 h3Habilidades">Mysql</h3>
+                        <p class="phabilidades">Dominio en MySQL para el diseño, administración e integración de bases
+                            de datos relacionales eficientes.</p>
+                    </div>
+                    <div class="glowing-card" style="--glow-color:#6CC24A;">
+                        <div class="imgPorcentaje" data-porcentaje="40" data-color="#6CC24A">
+                            <div class="porcentaje">
+                                <p class="porcentajeNumero">40%</p>
+                            </div>
+                            <img class="imgLogoH" src="img/habilidades/node_js.png" alt="logo de figma">
+                        </div>
+                        <h3 class="h3 h3Habilidades">Node js</h3>
+                        <p class="phabilidades">Dominio en el desarrollo backend con Node.js, integrando lógica, bases
+                            de datos y APIs para crear aplicaciones dinámicas, seguras y eficientes.</p>
+                    </div>
+                    <div class="glowing-card" style="--glow-color:#8092C8;">
+                        <div class="imgPorcentaje" data-porcentaje="40" data-color="#8092C8">
+                            <div class="porcentaje">
+                                <p class="porcentajeNumero">40%</p>
+                            </div>
+                            <img class="imgLogoH" src="img/habilidades/php.png" alt="logo de figma">
+                        </div>
+                        <h3 class="h3 h3Habilidades">PHP</h3>
+                        <p class="phabilidades">Dominio en PHP para desarrollar aplicaciones web dinámicas con
+                            programación estructurada y conexión a bases de datos.</p>
+                    </div>
+                    <div class="glowing-card" style="--glow-color:#F1C40F;">
+                        <div class="imgPorcentaje" data-porcentaje="40" data-color="#F1C40F">
+                            <div class="porcentaje">
+                                <p class="porcentajeNumero">40%</p>
+                            </div>
+                            <img class="imgLogoH" src="img/habilidades/express.png" alt="logo de figma">
+                        </div>
+                        <h3 class="h3 h3Habilidades">Express js</h3>
+                        <p class="phabilidades">Habilidad para crear prototipos interactivos, sistemas de diseño y
+                            flujos visuales que
+                            optimizan la comunicación entre diseño y desarrollo.</p>
+                    </div>
+                </div>
             </div>
         </section>
+        <section class="Proyectos">
+            <article class="tituloProyectos">
+                <h2>Proyectos </h2>
+            </article>
+            <article class="stack-contenedor">
+                <article class="card">
+                    <div class="headerCard">
+                        <h3>Colegio Tecnico Profesional San Pablo LC</h3>
+                        <a href="#">Ver sitio </a>
+                    </div>
+                    <p>Refrescamiento visual completo de la página web oficial. El objetivo fue modernizar
+                        la imagen digital del colegio, mejorar la usabilidad y alinear la estética con
+                        los valores educativos contemporáneos</p>
+                    <div class="images">
+                        <div class="antes">
+                            <h4>Antes</h4>
+                            <img src="" alt="">
+                        </div>
+                        <div class="despues">
+                            <h4>Despues</h4>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+        
+                </article>
+                <article class="card">
+                    <h2>Artículo 2</h2>
+                    <p>Contenido del segundo artículo...</p>
+                </article>
+                <article class="card">
+                    <h2>Artículo 3</h2>
+                    <p>Contenido del tercer artículo...</p>
+                </article>
+                <article class="card">
+                    <h2>Artículo 4</h2>
+                    <p>Contenido del cuarto artículo...</p>
+                </article>
+            </article>
+        </section>
+        <section class="contacto">
+            <h3>aaaaaa</h3>
+        </section>
+        
 
 
+
+
+
+        <section class="modales" id="modal">
+            <div class="cerrar" id="cerrarModal">
+                <span class="iconoXModal">X</span>
+            </div>
+            <article class="container">
+                <img id="modalImg" src="" alt="Imagen ampliada">
+            </article>
+        </section>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script>
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modalImg");
+        const cerrarModal = document.getElementById("cerrarModal");
+
+        document.querySelectorAll(".open-modal").forEach(img => {
+            img.addEventListener("click", e => {
+                e.preventDefault(); // Evita que el <a> recargue la página
+                const imgSrc = img.getAttribute("data-img");
+                modalImg.src = imgSrc;
+                modal.classList.add("activo");
+            });
+        });
+
+        cerrarModal.addEventListener("click", () => {
+            modal.classList.remove("activo");
+        });
+    </script>
     <script src="js/main.js"></script>
 
 </body>
