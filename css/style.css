@@ -1420,6 +1420,16 @@ CONTACTO
 }
 
 /* ======== 1. Teléfonos pequeños (320px – 480px) ======== */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   /* Estilos para pantallas muy pequeñas */
+  .contact-form{
+    width: 100%;
+  }
+  .imagenSobreMI img{
+    width: 90%;
+  }
+  .imagenSobreMI{
+    display: flex;
+    justify-content: center;
+  }
 }
