@@ -1227,11 +1227,36 @@ CONTACTO
   .menu-toggle:hover {
     color: #34e0a1;
   }
-  .textos{
+
+  .textos {
     align-items: center;
   }
-  .card{
+
+  .card {
     width: 90%;
+  }
+
+  .informacionCotacto {
+    flex-direction: column;
+  }
+  .contact-form{
+    margin: 0 auto;
+  }
+  .contact-card{
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .info-row{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .info-row p {
+      color: var(--negro);
+      font-size: 14px;
+      margin: 0 auto;
   }
 }
 
@@ -1279,9 +1304,7 @@ CONTACTO
   }
 
 
-  .informacionCotacto {
-    flex-direction: column;
-  }
+
 
   .infomacionSobreMi {
     flex-direction: column;
@@ -1370,6 +1393,30 @@ CONTACTO
   .textos {
     width: 100%;
   }
+  .headerCard{
+    flex-direction: column;
+    gap: 25px;
+  }
+  .experienciaIndividual{
+    flex-direction: column;
+  }
+  .prueba{
+    height: auto;
+  }
+    .fechaExperiencia{
+      position: initial;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+    .textosExperiencia{
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .h3Experiencia{
+      text-align: center;
+      width: 100%;
+    }
 }
 
 /* ======== 1. Teléfonos pequeños (320px – 480px) ======== */
