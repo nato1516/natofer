@@ -1432,4 +1432,10 @@ CONTACTO
     display: flex;
     justify-content: center;
   }
+  .experienciaIndividual{
+    width: 90%;
+  }
+  .textosExperiencia{
+    width: 100%;
+  }
 }
