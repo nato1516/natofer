@@ -51,9 +51,11 @@
                     <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
-                <div class="menu-toggle">
-                    <i class="fa fa-bars hambuerguesa" aria-hidden="true"></i> <!-- Ícono hamburguesa -->
-                </div>
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
             </nav>
         </div>
@@ -1055,21 +1057,37 @@
                                 <p class="p"><span class="icon"></span>+506 88218037</p>
                             </div>
                         </div>
+                        <form action="https://formspree.io/f/mwlvbrkj" method="POST" class="contact-form"
+                            id="contactForm">
+                            <h2 class="h2">Ponte en contacto</h2>
 
-                        <div class="contact-form">
-                            <h2 class="h2">PONTE EN CONTACTO</h2>
+                            <div class="formGroup">
+                                <label for="name">Full name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
 
-                            <label class="p">Nombre</label>
-                            <input type="text" placeholder="Ingrese su nombre">
+                            <div class="formGroup">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
 
-                            <label class="p">Correo</label>
-                            <input type="email" placeholder="Ingrese su correo">
+                            <div class="formGroup">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this about?"
+                                    required>
+                            </div>
 
-                            <label class="p">Mensaje</label>
-                            <textarea placeholder="Ingrese su mensaje"></textarea>
+                            <div class="formGroup">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Tell me about your project..." required></textarea>
+                            </div>
 
-                            <button class="boton">Enviar</button>
-                        </div>
+                            <button type="submit" class="boton" id="submitButton">
+                                Send message
+                            </button>
+                            <p id="formStatus" role="status" aria-live="polite"></p>
+                        </form>
                     </div>
 
 
