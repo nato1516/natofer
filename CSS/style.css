@@ -18,7 +18,9 @@
     --font-title: "Space Grotesk", sans-serif;
     --font-body: "DM Sans", sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     padding: 0;
     margin: 0;
@@ -38,9 +40,9 @@
   MENU
   ==================================================*/
 .menuNavegacion {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: #2f0653;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     padding: 1rem;
@@ -79,7 +81,7 @@
 .nav-link {
     font-family: var(--font-body);
     font-size: 18px;
-    color: var(--accent);
+    color: var(--bg);
     transition: 0.3s ease-in-out;
     position: relative;
     text-decoration: none;
@@ -92,12 +94,12 @@
     bottom: -3px;
     width: 0%;
     height: 2px;
-    background: var(--accent2);
+    background: var(--gold);
     transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-    color: var(--accent2);
+    color: var(--gold);
 }
 
 .nav-link:hover::after {
@@ -935,11 +937,146 @@
     line-height: 1.5;
     color: var(--muted);
 }
+/* HABILIDADES */
+
+.habilidades {
+    padding: 60px 0;
+    background-color: var(--bg);
+    margin: 0;
+}
+.habilidades h2{
+    font-family: var(--font-title);
+    font-size: 55px;
+    color: var(--ink);
+}
+.habilidades p{
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--muted);
+    width: 80%;
+}
+.grupoHabilidades {
+    margin-top: 28px;
+}
+
+.tituloGrupo {
+    font-size: 20px;
+    font-family: var(--font-title);
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--accent);
+}
+
+.listaHabilidades {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 32px;
+}
+
+.habilidadItem {
+    min-width: 0;
+}
+
+.habilidadInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 9px;
+}
+
+.habilidadInfo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.habilidadInfo > span:nth-child(2) {
+    font-size: 15px;
+    font-family: var(--font-title);
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.nivelTexto {
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-family: var(--font-body);
+    font-variant-numeric: tabular-nums;
+}
+
+.barraNivel {
+    height: 5px;
+    background: #e7e2dc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barraNivel span {
+    display: block;
+    width: var(--nivel);
+    height: 100%;
+    background: var(--color);
+    border-radius: inherit;
+    transform-origin: left;
+    animation: cargarBarra 1s ease-out both;
+}
+
+@keyframes cargarBarra {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ==============================
    RESPONSIVE
 ============================== */
 
+/*~ TABLET Y CELULAR */
+
+@media (max-width: 600px) {
+    .habilidades {
+        padding: 40px 0;
+    }
+
+    .grupoHabilidades {
+        margin-top: 24px;
+    }
+
+    .listaHabilidades {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .habilidadInfo img {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+/*& RESPETA LA PREFERENCIA DE MOVIMIENTO */
+
+@media (prefers-reduced-motion: reduce) {
+    .barraNivel span {
+        animation: none;
+    }
+}
 @media (max-width: 1000px) {
     .educacionGrid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1199,5 +1336,4 @@
         width: 250px;
         height: 250px;
     }
->>>>>>> 97d287d063c2017db4e0c59e4c8f35b5f4c5e0c8
 }
