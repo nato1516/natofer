@@ -1,548 +1,435 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NATOFER</title>
+    <link rel="stylesheet" href="css/sttyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  <header class="menuNavegacion">
-    <div class="container">
-      <nav class="menuInfo">
-        <div class="logo">
-          <svg xmlns="http://www.w3.org/2000/svg" id="Capa_2" data-name="Capa 2" viewBox="0 0 376.03 350">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: #34e0a1;
-                }
+    <header class="menuNavegacion">
+        <div class="container">
+            <nav class="menuInfo">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Capa_2" data-name="Capa 2" viewBox="0 0 376.03 350">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #5B2A86;
+                                }
 
-                .cls-2 {
-                  fill: #ffffff;
-                }
-              </style>
-            </defs>
-            <g id="Capa_1-2" data-name="Capa 1">
-              <g>
-                <polygon class="cls-2"
-                  points="181.01 0 182.11 347.7 106.01 248.5 106.01 143 92.01 153 91.73 234.34 61.17 211.34 61.17 138.66 137.01 68 137.01 236.5 150.01 250 150.01 49.5 181.01 0" />
-                <polygon class="cls-1" points="49.01 147 48.58 147.24 0 174.51 49.01 203 49.01 147" />
-                <polygon class="cls-1"
-                  points="195.01 0 195.01 350 237.13 283.11 234.58 189.15 376.03 190.17 331.09 155.45 225.9 153.91 225.28 98.89 271.86 140.13 315.26 140.64 195.01 0" />
-              </g>
-            </g>
-          </svg>
-        </div>
-        <ul class="contendorNav">
-          <li><a href="" class="nav-link">Inicio</a></li>
-          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-          <li><a href="#educacion" class="nav-link">Educación</a></li>
-          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-          <li><a href="#experiencias" class="nav-link">Experiencia</a></li>
-          <li><a href="#proyecto" class="nav-link">Proyectos</a></li>
-          <li><a href="#contacto" class="nav-link">Contacto</a></li>
-        </ul>
-        <div class="menu-toggle">
-          <i class="fa fa-bars hambuerguesa" aria-hidden="true"></i> <!-- Ícono hamburguesa -->
-        </div>
+                                .cls-2 {
+                                    fill: #000000;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Capa_1-2" data-name="Capa 1">
+                            <g>
+                                <polygon class="cls-2"
+                                    points="181.01 0 182.11 347.7 106.01 248.5 106.01 143 92.01 153 91.73 234.34 61.17 211.34 61.17 138.66 137.01 68 137.01 236.5 150.01 250 150.01 49.5 181.01 0" />
+                                <polygon class="cls-1" points="49.01 147 48.58 147.24 0 174.51 49.01 203 49.01 147" />
+                                <polygon class="cls-1"
+                                    points="195.01 0 195.01 350 237.13 283.11 234.58 189.15 376.03 190.17 331.09 155.45 225.9 153.91 225.28 98.89 271.86 140.13 315.26 140.64 195.01 0" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <ul class="contendorNav">
+                    <li><a href="" class="nav-link">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#educacion" class="nav-link">Educación</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#experiencias" class="nav-link">Experiencia</a></li>
+                    <li><a href="#proyecto" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fa fa-bars hambuerguesa" aria-hidden="true"></i> <!-- Ícono hamburguesa -->
+                </div>
 
-      </nav>
-    </div>
-  </header>
-  <main>
-    <!-- ============================================================
-              INICIA LA SECCION del banner
-            ============================================================= -->
-    <section class="banner">
-      <div class="container">
-        <div class="textosImagen">
-          <div class="textos">
-            <h1 class="h1 h1Banner">Natofer: donde la innovación se encuentra con <br><span id="typewriter"></span></h1>
-            <p class="p pBanner">
-              Soy una amante del diseño y la tecnología.
-              Me encanta dar vida a ideas que conectan con las personas.
-            </p>
-            <a href="#" class="btn-glow botonesBAnner">Explora más</a>
-          </div>
-          <div class="imagenBanners">
-            <img class="imagenBanner" src="img/ImagenBanner.png" alt="">
-          </div>
+            </nav>
+        </div>
+    </header>
 
-        </div>
+    <main>
+        <section class="banner">
+            <div class="container">
 
-      </div>
-    </section>
-    <!-- ============================================================
-                TERMINA LA SECCION del banner
-              ============================================================= -->
-    <!-- ============================================================
-          INICIA LA SECCION DE SOBRE MI
-        ============================================================= -->
-    <section class="sobreMi" id="nosotros">
-      <aticle class="container">
-        <h2 class="h2 h2SobreMi">Sobre mí</h2>
-        <div class="infomacionSobreMi">
-          <div class="imagenSobreMI">
-            <img src="img/Sobre mi/ChatGPT Image 21 nov 2025, 11_08_05 a.m..png" alt="">
-          </div>
-          <div class="textos">
-            <p class="p parrafoSobre">Soy una persona apasionada por la creatividad y la tecnología. Me encanta
-              transformar ideas en
-              experiencias visuales que conecten con las personas y aporten valor. Disfruto aprender, experimentar y
-              encontrar nuevas formas de expresar lo que imagino.
-            </p>
-            <p class="p parrafoSobre">Me considero una persona curiosa, detallista y con muchas ganas de crecer. Cada
-              proyecto es para mí una
-              oportunidad de descubrir algo nuevo, mejorar y construir soluciones que realmente funcionen. Me motiva ver
-              cómo un concepto puede convertirse en algo real, usable y estéticamente atractivo.</p>
-            <p class="p parrafoSobre sepradorBtn">Además de lo técnico, valoro mucho el trato humano. Me gusta trabajar
-              con calma, con intención y
-              disfrutando cada parte del proceso. Creo en la constancia, en el esfuerzo y en seguir avanzando paso a
-              paso, siempre abierta a aprender más.</p>
-            <a href="#" class="btn-glow">CV</a>
-          </div>
-        </div>
-      </aticle>
-    </section>
-    <!-- ============================================================
-          TERMINA LA SECCION DE SOBRE MI
-        ============================================================= -->
-    <!-- ============================================================
-          INICIA LA SECCION DE LA EDUCACION
-        ============================================================= -->
-    <section class="educacionSection" id="educacion">
-      <article class="container">
-        <h2 class="h2 h2Eduacion">EDUCACIÓN</h2>
-        <div class="timeline">
-          <div class="timeline-item left desaparecerTablet">
-            <div class="content">
-              <h3 class="h3 h3Educacion">Bachillerato en educación media</h3>
-              <h4 class="lugarEducacion">CTP San Pablo LC</h4>
-              <p>Obtuve el título de Bachiller en Educación Media, adquiriendo conocimientos en áreas
-                clave, además de habilidades para el pensamiento crítico y el trabajo colaborativo.</p>
-            </div>
-            <div class="year">2023</div>
-          </div>
-          <div class=" desaparecerEscritorio timeline-item right ">
-            <div class="year">2023</div>
-            <div class="content">
-              <h3 class="h3 h3Educacion">Bachillerato en educación media</h3>
-              <h4 class="lugarEducacion">CTP San Pablo LC</h4>
-              <p>Obtuve el título de Bachiller en Educación Media, adquiriendo conocimientos en áreas
-                clave, además de habilidades para el pensamiento crítico y el trabajo colaborativo.</p>
-            </div>
-          </div>
-          <div class="timeline-item right">
-            <div class="year">2023</div>
-            <div class="content">
-              <h3 class="h3 h3Educacion">Tecnico medio en informatica</h3>
-              <h4 class="lugarEducacion">CTP San Pablo LC</h4>
-              <p>Formación técnica orientada al desarrollo de habilidades prácticas en programación,
-                soporte técnico, redes, ofimática y mantenimiento de computadoras .</p>
-            </div>
-          </div>
-          <div class="timeline-item left desaparecerTablet">
-            <div class="content">
-              <h3 class="h3 h3Educacion">Desarrollo y diseño de paginas web </h3>
-              <h4>INA</h4>
-              <p>Capacitación práctica en creación de sitios web utilizando HTML, CSS, JavaScript y
-                herramientas modernas de diseño responsivo,estructura de navegación, y adaptación móvil.
-              </p>
-            </div>
-            <div class="year">2024</div>
-          </div>
-          <div class="timeline-item right desaparecerEscritorio">
-            <div class="year">2024</div>
-            <div class="content">
-              <h3 class="h3 h3Educacion">Desarrollo y diseño de paginas web </h3>
-              <h4>INA</h4>
-              <p>Capacitación práctica en creación de sitios web utilizando HTML, CSS, JavaScript y
-                herramientas modernas de diseño responsivo,estructura de navegación, y adaptación móvil.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item right">
-            <div class="year">2024</div>
-            <div class="content">
-              <h3 class="h3 h3Educacion">Diplomado en informática </h3>
-              <h4>UNED</h4>
-              <p>Formación práctica en programación, desarrollo de software y uso de herramientas
-                tecnológicas modernas, orientado a la creación de soluciones digitales eficientes y
-                adaptables.</p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-    <!-- ============================================================
-        TERMINA LA SECCION DE LA EDUCACION 
-      ============================================================= -->
-    <!-- ============================================================
-              INICIA LA SECCION DE HABILIDADES 
-            ============================================================= -->
-    <section class="habilidades" id="habilidades">
-      <div class="container">
-        <h2 class="h2 h2habilidades">HABILIDADES</h2>
-        <h3 class="h3 h3SubHabilidades">Diseño</h3>
-        <div class="glowing-cards">
-          <div class="glowing-card" style="--glow-color:#A259FF;">
-            <div class="imgPorcentaje" data-porcentaje="85" data-color="#A259FF">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">0%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/figma.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">Figma</h3>
-            <p class="phabilidades">Habilidad para crear prototipos interactivos, sistemas de diseño y
-              flujos visuales que
-              optimizan la comunicación entre diseño y desarrollo.</p>
-          </div>
-          <div class="glowing-card" style="--glow-color:#026f8d;">
-            <div class="imgPorcentaje" data-porcentaje="75" data-color="#026f8d">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">0%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/Photoshop.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">Photoshop</h3>
-            <p class="phabilidades">Dominio en Photoshop para la edición, retoque y creación de
-              composiciones visuales profesionales.
-            </p>
-          </div>
-          <div class="glowing-card" style="--glow-color:#DF871E;">
-            <div class="imgPorcentaje" data-porcentaje="40" data-color="#DF871E">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">40%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/Ilustrador.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">Ilustrador</h3>
-            <p class="phabilidades">Experiencia inicial en ilustraciones y gráficos vectoriales, aplicando
-              técnica y creatividad para generar resultados progresivos.</p>
-          </div>
-        </div>
-        <h3 class="h3 h3SubHabilidades">Frontend</h3>
-        <div class="glowing-cards">
-          <div class="glowing-card" style="--glow-color:#FDCD00;">
-            <div class="imgPorcentaje" data-porcentaje="60" data-color="#FDCD00">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">60%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/js.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">Javascript</h3>
-            <p class="phabilidades">Experiencia en la creación de funciones dinámicas e interactivas que
-              mejoran la usabilidad y la experiencia del usuario en entornos web.</p>
-          </div>
-          <div class="glowing-card" style="--glow-color:#379AD6;">
-            <div class="imgPorcentaje" data-porcentaje="80" data-color="#379AD6">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">80%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/css.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">CSS</h3>
-            <p class="phabilidades">Experiencia en el diseño visual de interfaces responsivas, aplicando
-              estilos modernos y coherentes con la identidad del proyecto.</p>
-          </div>
-          <div class="glowing-card" style="--glow-color:#E44D26;">
-            <div class="imgPorcentaje" data-porcentaje="80" data-color="#E44D26">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">80%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/html.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">HTML</h3>
-            <p class="phabilidades">Dominio en la estructuración semántica de páginas web, garantizando una
-              base sólida y accesible para el desarrollo frontend.</p>
-          </div>
-          <div class="glowing-card" style="--glow-color:#00D8FF;">
-            <div class="imgPorcentaje" data-porcentaje="40" data-color="#00D8FF">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">0%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/react.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">React</h3>
-            <p class="phabilidades">Habilidad para crear prototipos interactivos, sistemas de diseño y
-              flujos visuales que
-              optimizan la comunicación entre diseño y desarrollo.</p>
-          </div>
-        </div>
-        <h3 class="h3 h3SubHabilidades">Backend</h3>
-        <div class="glowing-cards">
-          <div class="glowing-card" style="--glow-color:#E48E00;">
-            <div class="imgPorcentaje" data-porcentaje="40" data-color="#E48E00">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">40%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/mysql.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">Mysql</h3>
-            <p class="phabilidades">Dominio en MySQL para el diseño, administración e integración de bases
-              de datos relacionales eficientes.</p>
-          </div>
-          <div class="glowing-card" style="--glow-color:#6CC24A;">
-            <div class="imgPorcentaje" data-porcentaje="40" data-color="#6CC24A">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">40%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/node_js.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">Node js</h3>
-            <p class="phabilidades">Dominio en el desarrollo backend con Node.js, integrando lógica, bases
-              de datos y APIs para crear aplicaciones dinámicas, seguras y eficientes.</p>
-          </div>
-          <div class="glowing-card" style="--glow-color:#8092C8;">
-            <div class="imgPorcentaje" data-porcentaje="40" data-color="#8092C8">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">40%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/php.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">PHP</h3>
-            <p class="phabilidades">Dominio en PHP para desarrollar aplicaciones web dinámicas con
-              programación estructurada y conexión a bases de datos.</p>
-          </div>
-          <div class="glowing-card" style="--glow-color:#F1C40F;">
-            <div class="imgPorcentaje" data-porcentaje="40" data-color="#F1C40F">
-              <div class="porcentaje">
-                <p class="porcentajeNumero">40%</p>
-              </div>
-              <img class="imgLogoH" src="img/habilidades/express.png" alt="logo de figma">
-            </div>
-            <h3 class="h3 h3Habilidades">Express js</h3>
-            <p class="phabilidades">Habilidad para crear prototipos interactivos, sistemas de diseño y
-              flujos visuales que
-              optimizan la comunicación entre diseño y desarrollo.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ============================================================
-                    TERMINA LA SECCION DE HABILIDADES
-                  ============================================================= -->
-    <!-- ============================================================
-        INICIA LA SECCION DE EXPRERIENCIA 
-      ============================================================= -->
-    <section class="experiencia" id="experiencias">
-      <article class="container">
-        <h2 class="h2 h2Experiencia">EXPERIENCIA</h2>
-        <article class="experienciasContenedor">
-          <div class="prueba">
-            <article class="experienciaIndividual">
-              <div class="fechaExperiencia">
-                <p class="pFechaExperiencia">2022</p>
-                <p class="fechaMesexperincia p">Septiembre</p>
-              </div>
-              <div class="textosExperiencia">
-                <h3 class="h3 h3Experiencia">Pasantias | Compu San Pablo</h3>
-                <p class="pExperienciaDescripcion p">-Colaboré en la instalación y configuración de
-                  software y
-                  hardware.
+                <div class="texto">
+                    <span class="mini-titulo">NATOFER · DISEÑO & DESARROLLO WEB</span>
 
-                </p>
-                <p class="pExperienciaDescripcion p">- Desarrollé habilidades en atención al cliente y
-                  trabajo
-                  en equipo.
-                </p>
-              </div>
+                    <h1>
+                        Diseño y desarrollo web
+                        <span>que hacen la diferencia.</span>
+                    </h1>
+
+                    <p>
+                        Creo sitios web, aplicaciones y experiencias digitales
+                        modernas, funcionales y pensadas para cada proyecto.
+                    </p>
+
+                    <div class="acciones">
+                        <a class="boton" href="#proyectos">
+                            Ver mis proyectos
+                        </a>
+
+                        <a class="boton-secundario" href="#contacto">
+                            Hablemos
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="visual">
+
+                    <div class="codigo">
+                        <span>&lt;</span> develop
+                        <strong>your ideas</strong>
+                        <span>/&gt;</span>
+                    </div>
+
+                    <div class="numero">
+                        01
+                    </div>
+
+                    <div class="tarjetas">
+
+                        <div class="tarjeta tarjeta-principal">
+                            <strong>WEB</strong>
+                            <span>Diseño & Desarrollo</span>
+                        </div>
+
+                        <div class="tarjeta">
+                            <strong>JS</strong>
+                            <span>Interactividad</span>
+                        </div>
+
+                        <div class="tarjeta">
+                            <strong>UI</strong>
+                            <span>Experiencias digitales</span>
+                        </div>
+
+                    </div>
+
+                    <div class="nombre-visual">
+                        NATOFER
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="sobre-mi" id="sobre-mi">
+            <article class="container">
+                <div class="sobre-contenido">
+
+                    <span class="etiqueta">SOBRE MÍ</span>
+
+                    <h2>
+                        Soy Natalia, pero en el mundo digital soy
+                        <span>NATOFER.</span>
+                    </h2>
+
+                    <p>
+                        Soy una persona apasionada por la <strong>creatividad</strong> y la
+                        <strong>tecnología</strong>. Me gusta transformar <strong>ideas</strong>
+                        en experiencias digitales que no solo se vean bien, sino que también
+                        tengan un propósito y funcionen de verdad.
+                    </p>
+
+                    <p>
+                        Disfruto <strong>aprender</strong>, experimentar y encontrar nuevas
+                        formas de hacer las cosas. Me considero una persona
+                        <strong>curiosa</strong>, <strong>detallista</strong> y con muchas ganas
+                        de seguir creciendo. Cada proyecto representa una oportunidad para
+                        descubrir algo nuevo, mejorar mis habilidades y convertir una idea en
+                        algo <strong>real</strong>.
+                    </p>
+
+                    <p>
+                        Me interesa todo lo que hay detrás de una
+                        <strong>experiencia web</strong>: desde pensar cómo se verá y cómo se
+                        sentirá hasta desarrollar la funcionalidad que hace que cobre vida.
+                        Me gusta cuidar los detalles, buscar <strong>soluciones</strong> y
+                        construir proyectos que sean útiles, claros y tengan su propia
+                        personalidad.
+                    </p>
+
+                    <p>
+                        También valoro mucho el lado <strong>humano</strong> de cada proceso.
+                        Creo en la <strong>constancia</strong>, en el esfuerzo y en avanzar paso
+                        a paso. Para mí, desarrollar no es solamente escribir código; también
+                        es aprender, equivocarse, probar de nuevo y
+                        <strong>disfrutar el proceso de crear</strong> algo propio.
+                    </p>
+
+                    <div class="habilidades">
+
+                        <a href="cv/EspaCV.pdf" class="boton" download>
+                            Descargar CV Español
+                        </a>
+                        <a href="cv/InglesCV.pdf" class="boton" download>
+                            Descargar CV Inglés
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="imagen-sobre">
+
+                    <div class="detalle detalle-1"></div>
+                    <div class="detalle detalle-2"></div>
+                    <div class="detalle detalle-3"></div>
+
+                    <div class="marco"></div>
+
+                    <img src="IMG/foto1.jpg" alt="Natalia Picado">
+                </div>
             </article>
-          </div>
-          <div class="prueba">
-            <article class="experienciaIndividual">
-              <div class="fechaExperiencia">
-                <p class="pFechaExperiencia">2023</p>
-                <p class="fechaMesexperincia p">Octubre-Diciembre</p>
-
-              </div>
-              <div class="textosExperiencia">
-                <h3 class="h3 h3Experiencia ">Práctica profesional | DISNA</h3>
-                <p class="pExperienciaDescripcion p">- Apoyé en el área de soporte técnico y mantenimiento
-                  de
-                  equipos informáticos.
-                </p>
-                <p class="pExperienciaDescripcion p">- Colaboré en la instalación y configuración de
-                  software
-                  y hardware.
-                </p>
-              </div>
-
-            </article>
-          </div>
-
-        </article>
-    </section>
-    <!-- ============================================================
-          TERMINA LA SECCION DE EXPERIENCIA
-        ============================================================= -->
-    <!-- ============================================================
-        INICIA LA SECCION DE LOS PROYECTOS
-      ============================================================= -->
-    <section class="Proyectos" id="proyecto">
-      <article class="container">
-        <article class="tituloProyectos">
-          <h2 class="h2">Proyectos </h2>
-        </article>
-        <article class="stack-contenedor">
-          <article class="card">
-            <div class="headerCard">
-              <h3 class="h3 tituloProyecto">Colegio Tecnico Profesional San Pablo LC</h3>
-              <a href="#" class="btn-glow">Ver sitio </a>
-            </div>
-            <p class="pProyectos">Refrescamiento visual completo de la página web oficial. El objetivo fue modernizar
-              la imagen digital del colegio, mejorar la usabilidad y alinear la estética con
-              los valores educativos contemporáneos</p>
-            <div class="imagenProyecto">
-              <div class="antes">
-                <h4 class="h4 titulosImagenes">Antes</h4>
-                <img class="imagenesProyectosIndividual" src="img/proyectos/antesColegio.png"
-                  alt="Imagen del antes de la pagina del colegio ">
-              </div>
-              <div class="despues">
-                <h4 class="h4 titulosImagenes">Despues</h4>
-                <img src="img/proyectos/despuesColegio.png" alt="Imagen del despues de la pagina del colegio">
-              </div>
-            </div>
-
-          </article>
-          <article class="card">
-            <h2>Artículo 2</h2>
-            <p>Contenido del segundo artículo...</p>
-          </article>
-          <article class="card">
-            <h2>Artículo 3</h2>
-            <p>Contenido del tercer artículo...</p>
-          </article>
-          <article class="card">
-            <h2>Artículo 4</h2>
-            <p>Contenido del cuarto artículo...</p>
-          </article>
-        </article>
-      </article>
-
-    </section>
-    <!-- ============================================================
-              TERMINA LA SECCION DE LOS PROYECTOS
-            ============================================================= -->
-    <!-- ============================================================
-                    INICIA LA SECCION DE CONTACTO
-                  ============================================================= -->
-    <section class="Contacto" id="contacto">
-      <article class="container">
-        <div class="contact-container">
-          <div class="informacionCotacto">
-            <div class="contact-card">
-              <h2 class="h2">CONTACTAME</h2>
-
-              <div class="info-row">
-                
-                <p class="p"><span class="icon">📍</span>San Pablo, San José, Costa Rica</p>
-              </div>
-
-              <div class="info-row">
-                
-                <p class="p"><span class="icon">✉️</span>natoferdesign@gmail.com</p>
-              </div>
-
-              <div class="info-row">
-                
-                <p class="p"><span class="icon">🔗</span>natofer</p>
-              </div>
-
-              <div class="info-row">
-                
-                <p class="p"><span class="icon">📞</span>+506 88218037</p>
-              </div>
-
-              <div class="info-row">
-                
-                <p class="p"><span class="icon">📱</span>+506 88218037</p>
-              </div>
-            </div>
-
-            <div class="contact-form">
-              <h2 class="h2">PONTE EN CONTACTO</h2>
-
-              <label class="p">Nombre</label>
-              <input type="text" placeholder="Ingrese su nombre">
-
-              <label class="p">Correo</label>
-              <input type="email" placeholder="Ingrese su correo">
-
-              <label class="p">Mensaje</label>
-              <textarea placeholder="Ingrese su mensaje"></textarea>
-
-              <button class="btn-glow ">Enviar</button>
-            </div>
-          </div>
 
 
-        </div>
+        </section>
+        <section class="formacionSection" id="educacion">
+            <article class="container">
 
-      </article>
-    </section>
-    <!-- ============================================================
-                  TERMINA LA SECCION DE CONTACTO
-                ============================================================= -->
-  </main>
-  <footer class="footer">
-    <div class="footer-container">
+                <!-- ENCABEZADO -->
+                <div class="formacionHeader">
 
-      <!-- LOGO -->
-      <div class="footer-logo">
-        <!-- tu SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376.03 350">
-          <defs>
-            <style>
-              .cls-1 {
-                fill: var(--verde-jade);
-              }
+                    <span class="etiqueta">EDUCACIÓN Y EXPERIENCIAS EDUCATIVAS</span>
+                    <h2 class="h2">Formación que impulsa lo que hago.</h2>
+                    <p>
+                        Mi formación combina conocimientos académicos y técnicos con el
+                        aprendizaje constante, permitiéndome desarrollar nuevas habilidades
+                        y construir una base sólida en tecnología y desarrollo
+                    </p>
 
-              .cls-2 {
-                fill: #ffffff;
-              }
-            </style>
-          </defs>
-          <g>
-            <polygon class="cls-2"
-              points="181.01 0 182.11 347.7 106.01 248.5 106.01 143 92.01 153 91.73 234.34 61.17 211.34 61.17 138.66 137.01 68 137.01 236.5 150.01 250 150.01 49.5 181.01 0" />
-            <polygon class="cls-1" points="49.01 147 48.58 147.24 0 174.51 49.01 203 49.01 147" />
-            <polygon class="cls-1"
-              points="195.01 0 195.01 350 237.13 283.11 234.58 189.15 376.03 190.17 331.09 155.45 225.9 153.91 225.28 98.89 271.86 140.13 315.26 140.64 195.01 0" />
-          </g>
-        </svg>
-      </div>
+                </div>
+                <div class="eduExpe">
+                    <div class="edu">
+                        <h3>Formación académica</h3>
+                        <!-- EDUCACIÓN -->
+                        <div class="educacionGrid">
 
-      <!-- MENÚ -->
-      <ul class="footer-menu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#educacion">Educación</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyecto">Proyecto</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+                            <article class="educacionCard">
+                                <span class="educacionYear">2023</span>
 
-    </div>
+                                <div class="educacionInfo">
+                                    <span class="educacionTipo">EDUCACIÓN MEDIA</span>
 
-    <!-- COPYRIGHT -->
-    <div class="footer-copy">
-      © 2025 Natofer — Todos los derechos reservados.
-    </div>
-  </footer>
+                                    <h4>Bachillerato en Educación Media</h4>
 
-  <script src="js/cardProyectos.js"></script>
-  <script src="js/convertirColor.js"></script>
-  <script src="js/parralax.js"></script>
-  <script src="js/cambiarTexto.js"></script>
+                                    <h5>CTP San Pablo LC</h5>
+
+                                    <p>
+                                        Formación académica que fortaleció mis habilidades de
+                                        pensamiento crítico, comunicación y trabajo colaborativo.
+                                    </p>
+                                </div>
+                            </article>
+
+
+                            <article class="educacionCard">
+                                <span class="educacionYear">2023</span>
+
+                                <div class="educacionInfo">
+                                    <span class="educacionTipo">FORMACIÓN TÉCNICA</span>
+
+                                    <h4>Técnico Medio en Informática</h4>
+
+                                    <h5>CTP San Pablo LC</h5>
+
+                                    <p>
+                                        Formación técnica en programación, soporte,
+                                        redes, ofimática y mantenimiento de computadoras.
+                                    </p>
+
+                                    <div class="tags">
+                                        <span>Programación</span>
+                                        <span>Redes</span>
+                                        <span>Soporte</span>
+                                    </div>
+                                </div>
+                            </article>
+
+
+                            <article class="educacionCard">
+                                <span class="educacionYear">2024</span>
+
+                                <div class="educacionInfo">
+                                    <span class="educacionTipo">DESARROLLO WEB</span>
+
+                                    <h4>Desarrollo y Diseño de Páginas Web</h4>
+
+                                    <h5>INA</h5>
+
+                                    <p>
+                                        Formación práctica enfocada en la creación de sitios
+                                        web modernos, responsivos y funcionales.
+                                    </p>
+
+                                    <div class="tags">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="educacionCard">
+                                <span class="educacionYear">2026</span>
+
+                                <div class="educacionInfo">
+                                    <span class="educacionTipo">CURSO</span>
+
+                                    <h4>Inglés</h4>
+
+                                    <h5>INA</h5>
+
+                                    <p>
+                                        Curso de formación complementaria para fortalecer
+                                        las habilidades de comunicación y comprensión del
+                                        idioma inglés.
+                                    </p>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                    <div class="edu">
+                        <h3>Experiencia educativa</h3>
+                        <!-- EXPERIENCIA EDUCATIVA -->
+                        <div class="experienciaEducativa">
+
+                            <!-- WORLDSKILLS -->
+                            <article class="worldskillsCard">
+
+                                <div class="worldskillsContent">
+
+                                    <div class="worldskillsTop">
+                                        <span class="experienceTag">
+                                            WORLD SKILLS COSTA RICA
+                                        </span>
+
+                                        <span class="experienceYear">
+                                            2025 — 2026
+                                        </span>
+                                    </div>
+
+                                    <h3>Desarrollo Web</h3>
+
+                                    <p>
+                                        Mi participación en el proceso de WorldSkills ha sido una
+                                        oportunidad para llevar mis conocimientos más allá del aula,
+                                        fortalecer mis competencias técnicas y enfrentar desafíos
+                                        que requieren precisión, creatividad y capacidad para resolver
+                                        problemas. Esta experiencia me ha permitido crecer como
+                                        desarrolladora y prepararme para competir en un entorno
+                                        profesional de alto nivel.
+                                    </p>
+
+
+                                    <!-- COMPETENCIA NACIONAL -->
+                                    <div class="worldskillsStage nacional">
+
+                                        <div class="stageHeading">
+                                            <span class="stageNumber">01</span>
+
+                                            <div>
+                                                <span class="stageLabel">ETAPA NACIONAL</span>
+                                                <h4>Competencia Nacional de Tecnología Web</h4>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            Participé en la competencia nacional de Tecnología Web,
+                                            donde puse a prueba mis conocimientos y habilidades
+                                            mediante retos prácticos relacionados con el desarrollo
+                                            web. La experiencia exigió aplicar mis conocimientos
+                                            técnicos, administrar el tiempo disponible y encontrar
+                                            soluciones a los requerimientos planteados.
+                                        </p>
+
+                                        <p>
+                                            Como resultado de mi desempeño, obtuve la medalla de plata,
+                                            un reconocimiento que representa el esfuerzo, la dedicación
+                                            y el trabajo realizado durante mi preparación.
+                                        </p>
+
+                                        <div class="achievement">
+                                            <strong>MEDALLA DE PLATA</strong>
+                                            <span>Competencia Nacional · Tecnología Web</span>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- WORLDSKILLS INTERNACIONAL -->
+                                    <div class="worldskillsStage internacional">
+
+                                        <div class="stageHeading">
+                                            <span class="stageNumber">02</span>
+
+                                            <div>
+                                                <span class="stageLabel">ETAPA INTERNACIONAL</span>
+                                                <h4>WorldSkills Shanghai 2026</h4>
+                                            </div>
+                                        </div>
+
+                                        <p>
+                                            Fui seleccionada para representar a Costa Rica en WorldSkills
+                                            International Shanghai 2026, en la especialidad de Desarrollo
+                                            Web. Este proceso representa un importante paso en mi
+                                            formación, al brindarme la oportunidad de prepararme para
+                                            un escenario internacional y continuar fortaleciendo mis
+                                            competencias en el área tecnológica.
+                                        </p>
+
+                                        <p>
+                                            La preparación está orientada al desarrollo de soluciones
+                                            web, la aplicación de buenas prácticas de programación,
+                                            la resolución de problemas y el trabajo bajo las condiciones
+                                            y limitaciones propias de una competencia. También implica
+                                            desarrollar disciplina, autonomía y capacidad de adaptación
+                                            ante nuevos retos.
+                                        </p>
+
+                                        <div class="tags">
+                                            <span>Desarrollo Web</span>
+                                            <span>Preparación técnica</span>
+                                            <span>Resolución de problemas</span>
+                                            <span>Competencia internacional</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+                </div>
+        </section>
+
+
+    </main>
+    <script src="js/educaion.js"></script>
 </body>
 
 </html>
