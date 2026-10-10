@@ -669,538 +669,324 @@ GENERALES
 /* =========================================================
    EDUCACIÓN + EXPERIENCIA EDUCATIVA
    ========================================================= */
-
 .formacionSection {
-    position: relative;
-    overflow: hidden;
-    padding: 80px 0;
+    padding: 90px 0;
     background: var(--bg);
 }
-.eduExpe{
-    display: flex;
-    gap: 60px;
-}
-
-
-
-/* =========================================================
-   ENCABEZADOS
-   ========================================================= */
+/* ENCABEZADO */
 
 .formacionHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 60px;
+    
+    margin: 0 auto;
+    margin-bottom: 65px;
+    text-align: center;
 }
-.experienciaHeader {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 60px;
+
+.etiqueta {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--muted);
+    margin-bottom: 14px;
+    font-family: var(--font-body);
 }
-.formacionHeader .h2{
-    margin: 0;
+
+.formacionHeader .h2 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 0 0 18px;
     font-family: var(--font-title);
-    font-size: 56px;
     color: var(--ink);
 }
+
 .formacionHeader p {
-    max-width: 750px;
-    margin: 12px 0 0;
-    Font-family: var(--font-body);
-    font-size: 16px;
     color: var(--muted);
-    line-height: 1.7;
+    line-height: 1.8;
+    margin: 0;
+    font-size: 16px;
+    font-family: var(--font-body);
 }
-/* =========================================================
-   GRID EDUCACIÓN
-   ========================================================= */
-.educacionGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-    margin-bottom: 150px;
-    height: 100%;
-}
-/* =========================================================
-   TARJETAS DE EDUCACIÓN
-   ========================================================= */
-.educacionCard {
-    position: relative;
-    min-height: 310px;
-    max-width: 360px;
+
+/* GRUPOS */
+
+.eduExpe {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    padding: 40px;
-
-    background: var(--card);
-    border: 1px solid rgba(29, 27, 25, .1);
-
-    overflow: hidden;
-
-    transition:
-        transform .5s cubic-bezier(.2, .8, .2, 1),
-        box-shadow .5s ease,
-        border-color .5s ease;
+    gap: 45px;
 }
 
+.edu > h3 {
+    font-size: 25px;
+    color: var(--accent2);
+    margin: 0 0 20px;
+    font-family: var(--font-title);
+}
 
-/* número/año gigante */
+/* ==============================
+   TARJETAS DE EDUCACIÓN
+============================== */
+
+.educacionGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-items: stretch;
+}
+
+.educacionCard {
+    min-width: 0;
+    height: 100%;
+    min-height: 330px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 24px 20px;
+    background: var(--card);
+    border: 1px solid var(--soft);
+    border-radius: 5px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.educacionCard:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold);
+}
 
 .educacionYear {
-    position: absolute;
-
-    top: -8px;
-    right: 20px;
-
-    font-size: 95px;
-    font-weight: 800;
-    line-height: 1;
+    align-self: flex-end;
+    color: var(--soft);
     font-family: var(--font-title);
-    color:#7a079d2c;
-
-    transition:
-        transform .6s cubic-bezier(.2, .8, .2, 1),
-        color .4s ease;
+    font-size:20px;
+    font-weight: 600;
 }
 
-
-/* contenido */
-.edu h3 {
-    margin: 0 0 15px;
-
-    font-size: 40px;
-    font-family: var(--font-title);
-    text-align: center;
-    line-height: .95;
-    letter-spacing: -.04em;
-}
 .educacionInfo {
-    position: relative;
-    z-index: 2;
-    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
 }
 
-.educacionTipo,
-.experienceTag {
+.educacionTipo {
     display: inline-block;
-
-    margin-bottom: 15px;
-
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-
-    color: var(--accent);
+    background: var(--soft);
+    color: var(--ink);
     font-family: var(--font-body);
+    border-radius: 30px;
+    padding: 6px 10px;
+    margin-bottom: 14px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .educacionInfo h4 {
-    max-width: 480px;
-
-    margin: 0 0 8px;
-    font-family: var(--font-title);
     font-size: 20px;
-    line-height: 1.15;
+    font-family: var(--font-title);
+    line-height: 1.4;
+    margin: 0 0 10px;
+    color: var(--accent);
 }
 
 .educacionInfo h5 {
-    margin: 0 0 18px;
-
     font-size: 14px;
     font-weight: 600;
-
     color: var(--muted);
-    font-family: var(--font-body);
+    font-family: var(--font-title);
+    margin: 0 0 16px;
 }
 
 .educacionInfo p {
-    max-width: 560px;
-    margin: 0;
-    font-family: var(--font-body);
-    color: var(--muted);
-    font-size: 16px;
+    font-size:14px;
     line-height: 1.7;
+    color: #5d5852;
+    margin: 0 0 18px;
+    font-family: var(--font-body);
 }
 
-
-/* =========================================================
-   HOVER EDUCACIÓN
-   ========================================================= */
-
-.educacionCard:hover {
-    transform: translateY(-10px);
-    border-color: rgba(16, 4, 39, 0.25);
-
-    box-shadow:
-        0 25px 60px rgba(26, 25, 29, 0.1);
-}
-
-.educacionCard:hover .educacionYear {
-    transform: translate(-10px, 8px) rotate(-7deg);
-
-    color: #c89c3c91;
-}
-
-
-/* línea inferior animada */
-
-.educacionCard::after {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    width: 0;
-    height: 4px;
-
-    background: var(--accent2);
-
-    transition: width .5s ease;
-}
-
-.educacionCard:hover::after {
-    width: 100%;
-}
-
-
-/* =========================================================
-   TAGS
-   ========================================================= */
+/* ETIQUETAS */
 
 .tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 8px;
-
-    margin-top: 24px;
+    gap: 7px;
+    margin-top: auto;
 }
 
 .tags span {
+    display: inline-block;
     padding: 7px 11px;
-
-    border: 1.5px solid #7a079d2c;
-    border-radius: 100px;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    color: var(--muted);
+    border-radius: 30px;
+    background: var(--soft);
+    color: var(--ink);
     font-family: var(--font-body);
-
-    transition: .3s ease;
-    cursor: pointer;
+    font-size: 11px;
 }
 
-.tags span:hover {
-    background: var(--ink);
-    color: var(--gold);
-
-    border-color: var(--ink);
-
-    transform: translateY(-2px);
-}
-
-
-/* =========================================================
+/* ==============================
    EXPERIENCIA EDUCATIVA
-   ========================================================= */
+============================== */
 
 .experienciaEducativa {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    height: 100%;
-    max-width: 1000px;
-    width: 950px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-items: stretch;
 }
-
-.experienciaHeader {
-    margin-bottom: 55px;
-}
-
-
-/* =========================================================
-   WORLDSKILLS
-   ========================================================= */
 
 .worldskillsCard {
-    --mouse-x: 50%;
-    --mouse-y: 50%;
+    min-width: 0;
+    height: 100%;
+    min-height: 440px;
+    box-sizing: border-box;
 
-    position: relative;
-
-    display: grid;
+    padding: 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    height: 100%;
-    max-width: 1000px;
-    padding: 45px 15px;
-
-    background: var(--accent2);
-    color: var(--bg);
-
-    overflow: hidden;
-
-    isolation: isolate;
+    background: var(--card);
+    border: 1px solid var(--soft);
+    border-radius: 12px;
 
     transition:
-        transform .5s cubic-bezier(.2, .8, .2, 1),
-        box-shadow .5s ease;
-}
-
-
-/* spotlight que seguirá el mouse */
-
-.worldskillsCard::before {
-    content: "";
-
-    position: absolute;
-
-    width: 450px;
-    height: 450px;
-
-    left: var(--mouse-x);
-    top: var(--mouse-y);
-
-    transform: translate(-50%, -50%);
-
-    background: radial-gradient(circle,
-            rgba(255, 255, 255, 0.342),
-            transparent 65%);
-
-    pointer-events: none;
-
-    z-index: -1;
-
-    transition: left .15s ease, top .15s ease;
-}
-
-
-/* decoración */
-
-.worldskillsCard::after {
-    content: "WS";
-
-    position: absolute;
-    
-
-    right: -35px;
-    bottom: -75px;
-
-    font-size: 17rem;
-    font-weight: 900;
-    line-height: 1;
-
-    color: rgba(212, 208, 208, 0.158);
-
-    pointer-events: none;
-
-    transition: transform .8s cubic-bezier(.2, .8, .2, 1);
+        transform 0.25s ease,
+        border-color 0.25s ease;
 }
 
 .worldskillsCard:hover {
-    transform: translateY(-12px);
-
-    box-shadow:
-        0 35px 80px rgba(0, 0, 0, .18);
+    transform: translateY(-4px);
+    border-color: var(--gold);
 }
 
-.worldskillsCard:hover::after {
-    transform: rotate(-8deg) scale(1.05);
-}
-
-/* contenido */
 .worldskillsContent {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
 }
+
 .worldskillsTop {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-direction: column;
-    margin-bottom: 35px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
 }
 
-.worldskillsCard .experienceTag {
-    color: var(--soft);
-    text-align: center;
-    font-family: var(--font-title);
-    font-size: 25px;
+.experienceTag {
+    background: var(--soft);
+    color: var(--ink);
+    font-family: var(--font-body);
+    padding: 7px 10px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
 }
 
 .experienceYear {
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: .1em;
+    font-size:20px;
+    font-family: var(--font-title);
+    color: var(--soft);
+}
+
+.worldskillsContent > h3 {
+    font-size: 25px;
+    font-family: var(--font-title);
+    color: var(--accent);
+    margin: 0 0 14px;
+}
+
+.worldskillsContent > p,
+.worldskillsStage > p {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--muted);
     font-family: var(--font-body);
-    color: rgba(255, 255, 255, .55);
+    margin: 0 0 14px;
 }
-
-.worldskillsContent h3 {
-    font-family: var(--font-title);
-    font-size: 20px;
-    line-height: .95;
-    letter-spacing: -.04em;
-}
-
-.worldskillsContent h4 {
-    margin: 0 0 25px;
-
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: var(--font-title);
-    color: rgba(255, 255, 255, .65);
-}
-
-.worldskillsContent p {
-
-    margin: 0;
-
-    color: rgba(255, 255, 255, .68);
-    font-family: var(--font-body);
-    line-height: 1.8;
-}
-
-.proceso {
-    font-size: 35px;
-    font-weight: 600;
-    color: var(--gold);
-    text-align: center;
-    font-family: var(--font-title);
-    margin-bottom: 20px;
-}
-/* =========================================================
-   LOGRO
-   ========================================================= */
+/* RECONOCIMIENTO */
 
 .achievement {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-
     gap: 5px;
-
-    margin-top: 30px;
-    padding: 18px 22px;
-
-    border-left: 3px solid var(--accent2);
-
-    background: rgba(255, 255, 255, .05);
+    margin-top: 8px;
+    padding: 14px;
+    border: 1px solid var(--accent2);
+    border-radius: 9px;
+    background: #fffaff;
 }
 
 .achievement strong {
-    font-size: .85rem;
-    letter-spacing: .1em;
+    font-size:15px;
+    font-family: var(--font-title);
+    color: var(--accent2);
+    letter-spacing: 0.5px;
 }
 
 .achievement span {
-    font-size: .8rem;
-    color: rgba(255, 255, 255, .55);
-}
-
-
-/* tags WorldSkills */
-
-.worldskillsCard .tags span {
-    color: rgba(255, 255, 255, .65);
-    border-color: rgba(255, 255, 255, .16);
-}
-
-.worldskillsCard .tags span:hover {
-    background: var(--bg);
-    color: var(--ink);
-}
-.stageLabel {
-    display: inline-block;
-    margin-bottom: 15px;
-
-    font-size: 17px;
-    font-weight: 800;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-
-    color: var(--soft);
-    font-family: var(--font-body);
-}
-.stageNumber {
-    font-size: 35px;
-    font-weight: 800;
-    line-height: 1;
-    font-family: var(--font-title);
-    color: var(--gold);
-}
-.achievement{
-    border-left: 4px solid var(--gold);
-    margin: 30px 0;
-}
-.achievement strong {
-    color: var(--gold);
-    font-family: var(--font-title);
-    font-size: 16px;
-}
-.achievement span {
-    color: var(--soft);
-    font-family: var(--font-body);
     font-size: 14px;
+    font-family: var(--font-body);
+    line-height: 1.5;
+    color: var(--muted);
 }
 
-/* =========================================================
-   ANIMACIÓN DE ENTRADA
-   ========================================================= */
+/* ==============================
+   RESPONSIVE
+============================== */
 
-.educacionCard,
-.worldskillsCard,
-.experienceCard {
-    opacity: 0;
-    transform: translateY(35px);
+@media (max-width: 1000px) {
+    .educacionGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .experienciaEducativa {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .worldskillsCard {
+        min-height: 440px;
+    }
 }
 
-.educacionCard.visible,
-.worldskillsCard.visible,
-.experienceCard.visible {
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 600px) {
+    .formacionSection {
+        padding: 60px 0;
+    }
+
+    .educacionGrid,
+    .experienciaEducativa {
+        grid-template-columns: 1fr;
+    }
+
+    .educacionCard {
+        min-height: 0;
+    }
+
+    .worldskillsCard {
+        min-height: 0;
+        padding: 20px;
+    }
+
+    .formacionHeader {
+        margin-bottom: 32px;
+    }
+
+    .eduExpe {
+        gap: 35px;
+    }
 }
 
-/* retrasos */
-.educacionCard:nth-child(1) {
-    transition-delay: .05s;
-}
-
-.educacionCard:nth-child(2) {
-    transition-delay: .12s;
-}
-
-.educacionCard:nth-child(3) {
-    transition-delay: .19s;
-}
-
-.educacionCard:nth-child(4) {
-    transition-delay: .26s;
-}
-
-.educacionCard:nth-child(5) {
-    transition-delay: .33s;
-}
-
-.worldskillsCard {
-    transition-delay: .1s;
-}
-
-.experienceCard {
-    transition-delay: .2s;
-}
 
 /* ========================================================= TABLET ========================================================= */
 @media (max-width: 900px) {
