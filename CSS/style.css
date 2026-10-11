@@ -1339,8 +1339,7 @@ html {
 }
 
 .contact-container {
-    width: 100%;
-    max-width: 1100px;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -2315,7 +2314,8 @@ Responsive
     }
     .contact-form{
         width: 100%;
-        padding: 0;
+        padding: 15px;
+        margin: 0 auto;
     }
     .proyectoImagen{
         display: none;
@@ -2323,6 +2323,24 @@ Responsive
     .proyectoImagen img{
         object-fit: cover;
         
+    }
+    .informacionCotacto{
+        width: 100%;
+        gap: 20px;
+
+    }
+    .contact-form .h2{
+        font-size: 25px;
+    }
+    .contact-container{
+        width: 100%;
+    }
+    .Contacto{
+        padding: 20px 0;
+    }
+    .footer-menu{
+        flex-direction: column;
+        text-align: center;
     }
 }
 
