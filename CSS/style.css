@@ -2289,7 +2289,7 @@ Responsive
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:600px) {
     .container{
         width: 90%;
         margin: 0 auto;
