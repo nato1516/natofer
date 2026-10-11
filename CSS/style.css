@@ -1741,6 +1741,7 @@ Responsive
         padding: 13px 18px;
         font-size: 14px;
     }
+
     /*NOSOTROS*/
     .sobre-mi {
         padding: 80px 0;
@@ -1785,8 +1786,156 @@ Responsive
     }
 }
 
+@media (max-width:1110px) {
+    .container {
+        width: 95%;
+        padding: 0;
+    }
+
+    .educacionGrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 35px;
+    }
+
+    .educacionCard {
+        width: 500px;
+        height: 500px;
+    }
+
+    .experienciaEducativa {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 35px;
+    }
+
+    .worldskillsCard {
+        width: 500px;
+        height: 500px;
+    }
+
+    .serviciosGrid {
+        gap: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .servicioCard {
+        width: 320px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .servicioCard h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .servicioNumero {
+        text-align: center;
+        width: 100%;
+    }
+
+    .servicioIcono {
+        text-align: center;
+        width: 100%;
+    }
+
+    .servicioCard .boton {
+        margin: 0 auto;
+    }
+
+    .proyectosGrid {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .proyectoCard {
+        width: 90%;
+    }
+
+    .headerProyectos {
+        text-align: center;
+    }
+
+    .proyectos {
+        padding: 30px 0;
+    }
+
+    .servicios {
+        padding: 30px 0;
+    }
+
+    .habilidades {
+        padding: 30px 0;
+    }
+
+    .formacionSection {
+        padding: 30px 0;
+    }
+
+    .sobre-mi {
+        padding: 30px 0;
+    }
+
+    .headerH {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-card .h2 {
+        font-size: 20px;
+    }
+
+    .habilidades p {
+        width: 100%;
+    }
+
+    .informacionCotacto {
+        display: flex;
+    }
+
+    .contact-form .h2 {
+        font-size: 45px;
+    }
+
+    .headerProyectos h2 {
+        font-size: 45px;
+    }
+
+    .servicios h2 {
+        font-size: 45px;
+    }
+
+    .habilidades h2 {
+        font-size: 45px;
+    }
+
+    .formacionHeader .h2 {
+        font-size: 45px;
+    }
+
+    .formacionHeader .h2 {
+        font-size: 45px;
+    }
+
+    .sobre-contenido h2 span {
+        font-size: 45px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+}
 /* Pantallas pequeñas */
-@media (max-width:900px) {
+@media (max-width:980px) {
 
     .menuInfo {
         padding: 0 15px;
@@ -1799,7 +1948,7 @@ Responsive
 
     .contendorNav {
         gap: 20px;
-        padding: 25px 0;
+        padding: 15px 0;
     }
 
     .nav-link {
@@ -1818,7 +1967,8 @@ Responsive
 
     .texto {
         width: 100%;
-        padding-top: 150px;
+        padding-top: 200px;
+        text-align: center;
     }
 
     .mini-titulo {
@@ -1827,9 +1977,13 @@ Responsive
         letter-spacing: 1.5px;
     }
 
+    .banner .container {
+        gap: 20px;
+    }
+
     .texto h1 {
         max-width: 100%;
-        font-size: clamp(38px, 10vw, 55px);
+        font-size: 50px;
         line-height: 1.05;
         letter-spacing: -2px;
     }
@@ -1838,11 +1992,15 @@ Responsive
         font-size: 15px;
         line-height: 1.7;
         margin: 20px 0;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .acciones {
-        margin-top: 25px;
+        margin: 30px auto;
         gap: 12px;
+        display: flex;
+        justify-content: center;
     }
 
     .boton,
@@ -1886,21 +2044,16 @@ Responsive
 
     .codigo {
         top: 0;
-        right: 0;
+        right: 70px;
         font-size: 12px;
         padding: 12px 14px;
     }
 
     .numero {
-        top: 45px;
-        left: 0;
-        font-size: 90px;
+        display: none;
     }
 
     .nombre-visual {
-        right: -10px;
-        bottom: 40px;
-        font-size: 48px;
         display: none;
     }
 
@@ -1915,19 +2068,16 @@ Responsive
         bottom: 35px;
         top: 80%;
     }
-    /*Nosotros*/
-    .sobre-mi {
-        padding: 65px 0;
-    }
 
+    /*Nosotros*/
     .sobre-mi article {
-        width: 88%;
         grid-template-columns: 1fr;
         gap: 25px;
     }
 
     .sobre-contenido {
         max-width: 100%;
+        text-align: center;
     }
 
     .etiqueta {
@@ -1938,7 +2088,14 @@ Responsive
 
     .sobre-contenido h2 {
         margin-bottom: 22px;
-        font-size: clamp(35px, 9vw, 46px);
+        font-size: 40px;
+        line-height: 1.08;
+        letter-spacing: -1.5px;
+    }
+
+    .sobre-contenido h2 span {
+        margin-bottom: 22px;
+        font-size: 40px;
         line-height: 1.08;
         letter-spacing: -1.5px;
     }
@@ -1951,14 +2108,14 @@ Responsive
 
     .imagen-sobre {
         width: 100%;
-        min-height: 440px;
+        height: 440px;
         margin-top: 5px;
     }
 
     .imagen-sobre::before {
         width: min(320px, 85%);
         height: 350px;
-        right: 5%;
+        right: 20%;
     }
 
     .marco {
@@ -1970,9 +2127,72 @@ Responsive
         width: min(285px, 74%);
         height: 330px;
     }
+
+    .habilidades {
+        gap: 45px;
+        justify-content: space-evenly;
+        width: 70%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .formacionHeader .h2 {
+        font-size: 40px;
+    }
+
+    .edu>h3 {
+        text-align: center;
+    }
+
+    .formacionHeader {
+        margin-bottom: 15px;
+    }
+
+    .educacionCard {
+        text-align: center;
+    }
+
+    .educacionCard h4 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .educacionCard h5 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .educacionTipo {
+        margin: 15px auto;
+    }
+
+    .tags {
+        margin: 0 auto;
+    }
+
+    .worldskillsCard {
+        text-align: center;
+    }
+
+    #habilidades {
+        width: 100%;
+    }
+
+    .habilidades h2 {
+        font-size: 40px;
+    }
+
+    .servicios h2 {
+        font-size: 40px;
+    }
+
+    .headerProyectos h2 {
+        font-size: 40px;
+    }
+
 }
 
-@media (max-width: 400px) {
+@media (max-width: 790px) {
 
     .banner .container {
         width: 88%;
@@ -2024,14 +2244,14 @@ Responsive
     }
 
     .codigo {
-        font-size: 10px;
-        padding: 10px;
+        display: none;
     }
 
     .visual::before {
         width: 220px;
         height: 220px;
     }
+
     /*NOSOTROS*/
     .sobre-mi {
         padding: 55px 0;
@@ -2086,153 +2306,11 @@ Responsive
     .boton-secundario:hover {
         transform: none;
     }
+
     .imagen-sobre img,
     .marco {
         transition: none;
     }
-}
-
-
-
-
-
-
-
-
-
-/* ========================================
-   RESPONSIVE: TABLET
-======================================== */
-
-@media (max-width: 900px) {
-    .Contacto {
-        padding: 75px 5%;
-    }
-
-    .informacionCotacto {
-        grid-template-columns: 300px minmax(0, 1fr);
-        min-height: auto;
-    }
-
-    .contact-card {
-        padding: 35px 23px;
-    }
-
-    .contact-form {
-        margin-left: -30px;
-        padding: 38px 28px 38px 65px;
-    }
-
-    .Contacto .h2 {
-        font-size: 1.55rem;
-    }
-
-    .contact-form .h2 {
-        font-size: 1.65rem;
-    }
-
-    .footer {
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-
-    .footer-container {
-        gap: 30px;
-    }
-
-    .footer-menu {
-        gap: 10px 18px;
-    }
-}
-
-/* ========================================
-   RESPONSIVE: MÓVIL
-======================================== */
-
-@media (max-width: 650px) {
-    .Contacto {
-        padding: 55px 6%;
-    }
-
-    .informacionCotacto {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 22px;
-    }
-
-    .contact-card {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 30px 23px;
-    }
-
-    .contact-form {
-        box-sizing: border-box;
-        width: 100%;
-        margin-left: 0;
-        padding: 30px 23px;
-    }
-
-    .Contacto .h2,
-    .contact-form .h2 {
-        font-size: 1.5rem;
-    }
-
-    .info-row .p {
-        font-size: 0.87rem;
-    }
-
-    .contact-form label {
-        font-size: 0.95rem;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 0.92rem;
-    }
-
-    .contact-form .btn-glow {
-        width: 100%;
-    }
-
-    /* Footer en columna */
-
-    .footer {
-        padding: 40px 6% 20px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 28px;
-    }
-
-    .footer-logo {
-        width: 82px;
-        height: 82px;
-    }
-
-    .footer-menu {
-        justify-content: center;
-        gap: 10px 20px;
-    }
-
-    .footer-menu li a {
-        font-size: 0.85rem;
-    }
-
-    .footer-copy {
-        margin-top: 28px;
-        padding-top: 18px;
-        font-size: 0.76rem;
-    }
-}
-
-/* ========================================
-   ACCESIBILIDAD
-======================================== */
-
-@media (prefers-reduced-motion: reduce) {
 
     .contact-card,
     .contact-form,
@@ -2247,26 +2325,7 @@ Responsive
         animation: none !important;
         transition: none !important;
     }
-}
 
-
-
-
-
-
-
-
-
-
-
-/* ==============================
-   RESPONSIVE
-============================== */
-/* TABLET */
-/* Accesibilidad */
-/* Respetar preferencias de accesibilidad */
-
-@media (prefers-reduced-motion: reduce) {
     .proyectoCard.animarEntrada {
         opacity: 1;
         transform: none;
@@ -2284,11 +2343,6 @@ Responsive
     .proyectoFlecha svg {
         transition: none;
     }
-}
-
-
-
-@media (prefers-reduced-motion: reduce) {
 
     .proyectoCard,
     .proyectoImagen img,
@@ -2307,346 +2361,8 @@ Responsive
     .proyectoCard:hover .proyectoImagen img {
         transform: none;
     }
-}
 
-/* =========================
-   DISEÑO RESPONSIVO
-========================= */
-
-@media (max-width: 700px) {
-    .proyectos {
-        padding: 70px 0;
-    }
-
-    .proyectosGrid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .headerProyectos {
-        margin-bottom: 32px;
-    }
-
-    .proyectoContenido {
-        padding: 21px;
-    }
-
-    .proyectosFooter {
-        margin-top: 32px;
-    }
-}
-
-
-@media (max-width: 950px) {
-    .serviciosGrid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-/* CELULAR */
-
-@media (max-width: 600px) {
-    .servicios {
-        padding: 65px 0;
-    }
-
-    .serviciosGrid {
-        grid-template-columns: 1fr;
-    }
-
-    .servicioCard {
-        min-height: 300px;
-    }
-}
-
-
-/*~ TABLET Y CELULAR */
-
-@media (max-width: 600px) {
-    .habilidades {
-        padding: 40px 0;
-    }
-
-    .grupoHabilidades {
-        margin-top: 24px;
-    }
-
-    .listaHabilidades {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
-    .habilidadInfo img {
-        width: 23px;
-        height: 23px;
-    }
-}
-
-/*& RESPETA LA PREFERENCIA DE MOVIMIENTO */
-
-@media (prefers-reduced-motion: reduce) {
     .barraNivel span {
         animation: none;
-    }
-}
-
-@media (max-width: 1000px) {
-    .educacionGrid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .experienciaEducativa {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .worldskillsCard {
-        min-height: 440px;
-    }
-}
-
-@media (max-width: 600px) {
-    .formacionSection {
-        padding: 60px 0;
-    }
-
-    .educacionGrid,
-    .experienciaEducativa {
-        grid-template-columns: 1fr;
-    }
-
-    .educacionCard {
-        min-height: 0;
-    }
-
-    .worldskillsCard {
-        min-height: 0;
-        padding: 20px;
-    }
-
-    .formacionHeader {
-        margin-bottom: 32px;
-    }
-
-    .eduExpe {
-        gap: 35px;
-    }
-}
-
-
-/* ========================================================= TABLET ========================================================= */
-@media (max-width: 900px) {
-    .formacionSection {
-        padding: 90px 0;
-    }
-
-    .educacionGrid {
-        grid-template-columns: 1fr;
-    }
-
-    .worldskillsCard {
-        grid-template-columns: 70px 1fr;
-        padding: 35px;
-    }
-
-    .worldskillsContent h3 {
-        font-size: 3.5rem;
-    }
-}
-
-/* ========================================================= MÓVIL ========================================================= */
-@media (max-width: 600px) {
-    .formacionSection {
-        padding: 75px 0;
-    }
-
-    .formacionHeader,
-    .experienciaHeader {
-        gap: 15px;
-        margin-bottom: 40px;
-    }
-
-    .sectionNumber {
-        min-width: 38px;
-        height: 38px;
-        font-size: .7rem;
-    }
-
-    .educacionGrid {
-        gap: 15px;
-        margin-bottom: 100px;
-    }
-
-    .educacionCard {
-        min-height: 290px;
-        padding: 25px;
-    }
-
-    .educacionYear {
-        font-size: 4.5rem;
-    }
-
-    .educacionInfo {
-        margin-top: 55px;
-    }
-
-    .worldskillsCard {
-        display: block;
-        min-height: auto;
-        padding: 30px;
-    }
-
-    .worldskillsNumber {
-        margin-bottom: 30px;
-        font-size: 3rem;
-    }
-
-    .worldskillsTop {
-        align-items: flex-start;
-        flex-direction: column;
-        margin-bottom: 25px;
-    }
-
-    .worldskillsContent h3 {
-        font-size: 2.8rem;
-    }
-
-    .worldskillsCard::after {
-        font-size: 10rem;
-    }
-
-    .experienceCard {
-        display: block;
-        padding: 30px;
-    }
-
-    .experienceNumber {
-        margin-bottom: 20px;
-        font-size: 3rem;
-    }
-
-    .experienceContent .experienceYear {
-        position: static;
-        display: block;
-        margin-bottom: 15px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =========================RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-    .banner {
-        padding: 70px 0;
-    }
-
-    .banner .container {
-        grid-template-columns: 1fr;
-        gap: 60px;
-    }
-
-    .texto {
-        text-align: center;
-    }
-
-    .texto p {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .acciones {
-        justify-content: center;
-    }
-
-    .visual {
-        min-height: 470px;
-    }
-}
-
-
-@media (max-width: 550px) {
-
-    .banner {
-        min-height: auto;
-        padding: 60px 0;
-    }
-
-    .texto h1 {
-        font-size: 45px;
-        letter-spacing: -2px;
-    }
-
-    .texto p {
-        font-size: 16px;
-    }
-
-    .acciones {
-        flex-direction: column;
-    }
-
-    .boton,
-    .boton-secundario {
-        width: 100%;
-        text-align: center;
-    }
-
-    .visual {
-        min-height: 400px;
-    }
-
-    .tarjetas {
-        width: 290px;
-    }
-
-    .tarjeta {
-        min-height: 100px;
-        padding: 16px;
-    }
-
-    .tarjeta-principal {
-        min-height: 135px;
-    }
-
-    .tarjeta-principal strong {
-        font-size: 52px;
-    }
-
-    .tarjeta strong {
-        font-size: 25px;
-    }
-
-    .codigo {
-        right: 0;
-        font-size: 13px;
-        padding: 14px 16px;
-    }
-
-    .numero {
-        font-size: 90px;
-    }
-
-    .nombre-visual {
-        font-size: 55px;
-    }
-
-    .visual::before {
-        width: 250px;
-        height: 250px;
     }
 }
