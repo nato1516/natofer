@@ -2379,8 +2379,16 @@ Responsive
     .headerProyectos h2 {
         font-size: 25px;
     }
+    .texto{
+        height: auto;
+    }
+    
 }
-
+@media (max-width:380px) {
+    .visual{
+        display: none;
+    }
+}
 /* =========================================
    ANIMACIONES Y ACCESIBILIDAD
 ========================================= */
