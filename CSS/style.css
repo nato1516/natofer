@@ -1934,6 +1934,7 @@ Responsive
         width: 80%;
     }
 }
+
 /* Pantallas pequeñas */
 @media (max-width:980px) {
 
@@ -2285,6 +2286,19 @@ Responsive
     .imagen-sobre img {
         height: 280px;
         width: 74%;
+    }
+}
+
+@media (max-width:450px) {
+    .educacionCard {
+        height: auto;
+    }
+    .worldskillsCard{
+        height: auto;
+    }
+    .tags{
+        justify-content: space-evenly;
+        display: flex;
     }
 }
 
