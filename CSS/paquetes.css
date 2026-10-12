@@ -37,6 +37,16 @@ html {
     margin: 0 auto;
     padding: 0 1.5rem;
 }
+.contendorNav{
+    align-items: center;
+}
+.contendorNav .boton{
+    color: var(--card);
+    border: 2px solid var(--bg);
+}
+.contendorNav .boton:hover{
+    border:2px solid  var(--accent2);
+}
 /* =========================================
    BANNER DE INTRODUCCIÓN — ESENCIAL
 ========================================= */
