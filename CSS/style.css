@@ -1644,9 +1644,32 @@ Responsive
         height: 22px;
         cursor: pointer;
         z-index: 1001;
+        background-color: transparent;
+        border: none;
     }
 
-    /* Enlaces de navegación */
+    .menu-toggle span {
+        background-color: #C89B3C;
+        width: 100%;
+        height: 3px;
+    }
+    .menu-toggle {
+        position: relative;
+    }
+    .menu-toggle span {
+        display: block;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
     .contendorNav {
         display: none;
         position: absolute;
@@ -2379,16 +2402,19 @@ Responsive
     .headerProyectos h2 {
         font-size: 25px;
     }
-    .texto{
+
+    .texto {
         height: auto;
     }
-    
+
 }
+
 @media (max-width:380px) {
-    .visual{
+    .visual {
         display: none;
     }
 }
+
 /* =========================================
    ANIMACIONES Y ACCESIBILIDAD
 ========================================= */
@@ -2467,4 +2493,3 @@ Responsive
         animation: none;
     }
 }
-
