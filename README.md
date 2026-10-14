@@ -1,89 +1,65 @@
-# NATOFER — Portfolio Website
+# NATOFER — Personal Portfolio
 
-**Personal portfolio · Web Development · Costa Rica 🇨🇷**
+<p align="center">
+  <img src="https://img.shields.io/badge/WEB-DEVELOPMENT-e4572e?style=for-the-badge" alt="Web Development">
+  <img src="https://img.shields.io/badge/STATUS-LIVE-1d1b19?style=for-the-badge" alt="Live">
+</p>
 
-NATOFER is a personal portfolio website developed to showcase my work, technical skills, education, and services in web development. The project brings together my professional profile and selected projects in a modern, responsive, and user-friendly interface.
+<p align="center">
+  Personal portfolio showcasing my work, technical skills, services, and journey as a web developer.
+</p>
 
- **Live Demo:** [natofer.vercel.app](https://natofer.vercel.app/)
+<p align="center">
+  <a href="https://natofer.vercel.app/"><strong>🌐 Visit Website</strong></a>
+</p>
 
 ---
 
-##  Features
+## ✦ About the Project
 
-- **Home:** introduction to the NATOFER brand.
-- **About Me:** personal profile and approach to web development.
-- **Education & Experience:** academic background, technical training, and WorldSkills experience.
-- **Skills:** visual presentation of technical skills and development tools.
-- **Services:** web development, custom websites, web applications, and interface design.
-- **Projects:** portfolio showcasing selected web development projects.
-- **Contact:** contact form for inquiries and professional opportunities.
-- **CV Download:** access to résumé versions in Spanish and English.
-- **Responsive Design:** interface adapted to different screen sizes.
+**NATOFER** is my personal portfolio website, created to showcase my work, technical skills, education, and services in web development.
 
-## Tech Stack
+It combines a distinctive visual identity with a clean interface, interactive elements, and responsive layouts to present my professional profile and digital projects.
 
-- **HTML5** — semantic page structure.
-- **CSS3** — layouts, styling, animations, and responsive design.
-- **JavaScript** — interactive elements and dynamic behavior.
-- **Bootstrap** — interface components and layout utilities where applicable.
-- **Vercel** — deployment and hosting.
+## ✦ Features
 
-##  Project Structure
+- Modern and responsive interface
+- Personal introduction and professional background
+- Technical skills and education
+- Web development services
+- Selected projects
+- Contact section
+- Downloadable résumé
+- Interactive navigation and UI elements
 
-The project is organized around its frontend assets and website pages.
+## ✦ Technologies
 
-```text
-natofer/
-├── home.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── img/
-├── assets/
-└── README.md
-```
+- **HTML5** — Semantic structure
+- **CSS3** — Styling, layouts, and responsive design
+- **JavaScript** — Interactive elements and dynamic behavior
+- **Vercel** — Deployment and hosting
 
-*Note: The directory structure above is illustrative. Update it to match the actual files and folders in the repository.*
+## ✦ Live Preview
 
-## 🚀 Getting Started
+Explore the website:
 
-To run the project locally:
+**[natofer.vercel.app](https://natofer.vercel.app/)**
 
-1. Clone the repository.
+## ✦ Goals
 
-   ```bash
-   git clone https://github.com/nato1516/natofer.git
-   ```
-
-2. Open the project folder.
-
-   ```bash
-   cd natofer
-   ```
-
-3. Open the main HTML file in your browser, or use the **Live Server** extension in Visual Studio Code.
-
-No backend configuration is required if the project is running entirely on static frontend files.
-
-## Purpose
-
-This project was created to establish my digital presence as a web developer, demonstrate my technical abilities, and present my work to potential clients and employers.
-
-It also serves as a space to experiment with web technologies, improve my development practices, and build digital experiences focused on functionality, usability, and visual identity.
-
-##  Author
-
-**Natalia Picado Fernández — NATOFER**
-
-- **Portfolio:** [natofer.vercel.app](https://natofer.vercel.app/)
-- **GitHub:** [@nato1516](https://github.com/nato1516)
-- **Email:** natoferdesign@gmail.com
-- **Location:** Costa Rica 🇨🇷
+- Establish a professional digital presence.
+- Showcase web development projects and technical skills.
+- Present services and professional experience.
+- Continuously improve design, usability, and development practices.
 
 ---
 
 <p align="center">
-  <strong>NATOFER</strong><br>
+  <strong>NATOFER</strong>
+  <br>
+  Web Development · Creative Technology
+  <br><br>
   <em>Designed with purpose. Built with code.</em>
+  <br><br>
+  © 2026 NATOFER
 </p>
